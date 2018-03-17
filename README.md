@@ -1,45 +1,48 @@
-# modoc
-### An API documentation generator
+# ismart-doc
+### An API documentation generator base of [modoc](https://github.com/mhbseal/modoc)
 
 #### Install and Run
 
 npm
 
-    npm install modoc -g
+    npm install ismart-doc -g
     
-    modoc --config <configPath>
+    smartdoc --config <configPath>
 
 github
     
-    git clone https://github.com/mhbseal/modoc.git
-    cd modoc && npm install
+    git clone https://github.com/hnzxb/ismart-doc
+    cd ismart-doc && npm install
     
-    node modoc.js --config <configPath>
+    node index.js --config <configPath>
 
 #### Example
 source contains mojs example,so wen can Enter 'exmpale' directory after install(npm or github)
 
 npm
 
-    modoc
+    ismart-doc
 
 github
 
-    node ../modoc
+    node ../index
 
 #### Config
-  
-    {
-      "name": "",
-      "version": "",
-      "repositoryUrl": "",
-      "introduction": "",
-      "paths": {
-        "input": "",
-        "output": ""
-      },
-      "source": "",
-      "skip": []
+    /ismart.config.js
+    module.exports = {
+        doc: {
+            name         : "ismart-path",
+            title        : "Path扩展-ismart",
+            version      : "0.1.0",
+            repositoryUrl: "https://github.com/hnzxb/ismart-path",
+            introduction : '描述',
+            paths        : {
+                input : "./src",
+                output: "./readme"
+            },
+            source       : '',
+            skip         : []
+        }
     }
     
 #### Comment Example
@@ -81,11 +84,11 @@ after add generator
      * 
      * @name file name or method name or property name(required)
      * @example
-     * var str = 'modoc';
+     * var str = 'doc';
      * num.toUpperCase();
      * ...
      * @more
      * this is more information,
-     * modoc is very good.
+     * let go.
      * ...
      */
