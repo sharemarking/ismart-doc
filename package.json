@@ -1,9 +1,9 @@
 {
   "name": "ismart-doc",
   "version": "0.1.0",
-  "description": "API documentation generator,fork from https://github.com/mhbseal/modoc",
+  "description": "API documentation generator,base in https://github.com/mhbseal/modoc",
   "bin": {
-    "ismartdoc": "./bin/ismartdoc"
+    "smartdoc": "./bin/ismartdoc"
   },
   "repository": {
     "type": "git",
