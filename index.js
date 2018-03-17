@@ -121,7 +121,6 @@ html = _.template(tpl)({config: config, data: result});
 // 生成doc
 fs.writeFileSync(path.join(distPath, 'index.html'), html);
 // 生成html需要的image
-fs.writeFileSync(path.join(distPath, 'images/logo.png'), fs.readFileSync(path.join(__dirname, 'images/logo.png')));
 fs.writeFileSync(path.join(distPath, 'images/background.png'), fs.readFileSync(path.join(__dirname, 'images/background.png')));
 // 生成目标js，便于控制台即调用
 if (config.source) {
