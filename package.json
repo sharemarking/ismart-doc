@@ -1,6 +1,6 @@
 {
   "name": "ismart-doc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "API documentation generator,base in https://github.com/mhbseal/modoc",
   "bin": {
     "smartdoc": "./bin/ismartdoc"
